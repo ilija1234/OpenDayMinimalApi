@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diligent.MinimalAPI", "Diligent.MinimalAPI.csproj", "{832C7D69-A182-4B1C-887C-F44922617FF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{832C7D69-A182-4B1C-887C-F44922617FF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{832C7D69-A182-4B1C-887C-F44922617FF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{832C7D69-A182-4B1C-887C-F44922617FF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{832C7D69-A182-4B1C-887C-F44922617FF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D28F9F0-9296-4AE4-A5C1-D584F8829018}
+	EndGlobalSection
+EndGlobal
