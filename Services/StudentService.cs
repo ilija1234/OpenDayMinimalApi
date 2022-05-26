@@ -18,5 +18,10 @@ namespace Diligent.MinimalAPI.Services
             await _facultyContext.Students.AddAsync(student);
             return await _facultyContext.SaveChangesAsync() > 0;
         }
+
+        public async Task<List<Student>> GetAllStudentsAsync()
+        {
+            return await _facultyContext.Students.ToListAsync();
+        }
     }
 }

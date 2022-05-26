@@ -7,8 +7,8 @@ namespace Diligent.MinimalAPI.Endpoints
 {
     public static class StudentEndpoints
     {
-        private const string Tag = "Student";
-        private const string BaseRoute = "student";
+        private const string Tag = "Students";
+        private const string BaseRoute = "students";
 
         // Extentions methods:
         // Services DI
@@ -27,6 +27,14 @@ namespace Diligent.MinimalAPI.Endpoints
                 .Produces<bool>(200).Produces<IEnumerable<ValidationFailure>>(400)
                 .WithTags(Tag);
 
+            app.MapGet(BaseRoute, GetAllStudentsAsync).WithTags(Tag);
+
+        }
+
+        internal static async Task<IResult> GetAllStudentsAsync(IStudentService studentService)
+        {
+            var students = await studentService.GetAllStudentsAsync();
+            return Results.Ok(students);
         }
 
         internal static async Task<IResult> CreateStudentAsync(Student student, IStudentService studentService, IValidator<Student> validator)

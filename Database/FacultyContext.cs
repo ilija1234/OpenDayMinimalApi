@@ -7,14 +7,13 @@ namespace Diligent.MinimalAPI.Database
     {
         public DbSet<Student> Students { get; set; }
 
-
         public string DbPath { get; }
 
         public FacultyContext() : base()
         {
             var folder = Environment.SpecialFolder.LocalApplicationData;
             var path = Environment.GetFolderPath(folder);
-            DbPath = Path.Join(path, "faculty.db");
+            DbPath = Path.Join(path, "openday.db");
             Console.WriteLine($"Database path: {DbPath}.");
         }
 
